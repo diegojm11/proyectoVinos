@@ -7,6 +7,7 @@ box-sizing: border-box;
 
 /** font-family: 'Italiana', serif */
 
+/** abajo pagina index */
 body {
     background-color: rgba(237, 235, 235, 0.821);
 }
@@ -68,6 +69,36 @@ footer p {
 footer {
     background-color: rgb(123, 123, 123);
 }
+/** para abajo animacion pagina index*/
+
+.nosotrosAnimacion:hover {
+transform: scale(1.2);
+transition: all 2s;
+}
+.vinosAnimacion:hover  {
+    transform: scale(1.2);
+    transition: all 2s;
+    }
+.clientesAnimacion:hover  {
+    transform: scale(1.2);
+    transition: all 2s;
+    }
+.contactosAnimacion:hover  {
+    transform: scale(1.2);
+    transition: all 2s;
+    }
+
+.divLogo_principal{
+    animation-name: moverLogoPrincipal;
+    animation-duration: 3s;
+    
+}
+@keyframes moverLogoPrincipal{
+    0%{
+        transform: translate(0px,-300px) 
+    }
+}
+
 
 /** para abajo pagina vinos*/
 
@@ -193,6 +224,35 @@ footer {
     padding-bottom: 40px;
 }
 
+/** para abajo animacion pagina vinos*/
+
+.divLogo{
+    animation-name: mover;
+    animation-duration: 3s;
+    
+}
+@keyframes mover{
+    0%{
+        transform: translate(-150px,0px) 
+    }
+}
+
+.vino1:hover {
+    transform: scale(1.1);
+    transition: all 2s;
+    }
+.vino2:hover {
+    transform: scale(1.1);
+    transition: all 2s;
+    }
+.vino3:hover {
+        transform: scale(1.1);
+        transition: all 2s;
+        }
+.vino4:hover {
+            transform: scale(1.1);
+            transition: all 2s;
+            }
 /** para abajo pagina nosotros*/
 
 .bodegaImg img{
