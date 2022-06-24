@@ -1,0 +1,486 @@
+*{margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+}
+
+/** font-family: 'Cinzel', serif; */
+
+/** font-family: 'Italiana', serif */
+
+body {
+    background-color: rgba(237, 235, 235, 0.821);
+}
+.Parral__img{ 
+    width: 100%;
+    margin: 0px;
+
+}
+
+.header_index{
+    width: 100%;
+    overflow: hidden;
+    background-image: url(../IMG/Inicio.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.Titulo__index{
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 80px;
+    color: rgb(215, 215, 215);
+}
+
+.Menu_index ul{
+    list-style: none;
+    height: 300px;
+    width: 100%;
+    background-color: rgba(196, 196, 196, 0.821);
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:space-around;
+}
+
+
+.Menu_index ul li a{
+    text-decoration: none;
+    color:black;
+    font-size: 50px;
+    font-family:'Italiana', serif ;
+ }
+
+
+
+
+footer p {
+    display: inline-block;
+    padding: 10px;
+    margin-left: 220px;
+
+}
+footer {
+    background-color: rgb(123, 123, 123);
+}
+
+/** para abajo pagina vinos*/
+
+.navbar {
+    background-color: #212626;
+    width: 100%;
+    height: 150px;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    }
+  
+.logo{
+    width: 100px;
+}
+    
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+.navbar ul li {
+    padding: 50px
+}
+.navbar ul li a {
+    text-decoration: none;
+    font-family:'Italiana', serif;
+    color: rgb(168, 168, 168);
+    font-size: 30px;
+}
+
+.tituloPrincipal {
+    font-family:'Italiana', serif;
+    font-size: 50px;
+    padding: 20px;
+    padding-left: 70px;
+    color: #171526;
+}
+.vinos_img{
+    width: 250px;
+    grid-area: vinos_img;
+}
+.vino1{
+    margin: 30px;
+    width:600px;
+    height: 300px;  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: "vinos_img vinos_titulo"
+                         "vinos_img vinos_descripcion" ;
+    overflow: hidden;
+    grid-area: vino1;
+    border-style: solid;
+    
+
+}
+.vino2{
+    margin: 30px;
+    width: 600px;
+    height: 300px;  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: "vinos_img vinos_titulo"
+                         "vinos_img vinos_descripcion" ;
+    overflow: hidden;
+    grid-area: vino2;
+    border-style: solid;
+
+}
+.vino3{
+    margin: 30px;
+    width: 600px;
+    height: 300px;  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: "vinos_img vinos_titulo"
+                         "vinos_img vinos_descripcion" ;
+    overflow: hidden;
+    grid-area: vino3;
+    border-style: solid;
+
+}
+.vino4{
+    margin: 30px;
+    width: 600px;
+    height: 300px;  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: "vinos_img vinos_titulo"
+                         "vinos_img vinos_descripcion" ;
+    overflow: hidden;
+    grid-area: vino4;
+    border-style: solid;
+    
+
+}
+
+.vinos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1 fr;
+    grid-template-areas: "vino1 vino2"
+                        "vino3 vino4";
+    justify-items: center;
+}
+.vinos_titulo{
+    font-family:'Cinzel', serif;
+    font-size: 20px;
+    grid-area: vinos_titulo;
+    padding-left: 20px;
+
+}
+.vinos_descripcion{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    grid-area: vinos_descripcion;
+    padding-left: 15px;
+    padding-bottom: 40px;
+}
+
+/** para abajo pagina nosotros*/
+
+.bodegaImg img{
+    width: 300px;
+    
+}
+.bodegaImg{
+    padding: 50px;
+    grid-area: bodegaImg;
+    align-items: center;
+}
+
+.tituloNosotros{
+    font-family: 'Cinzel', serif;
+    grid-area: tituloNosotros;
+    padding: 50px;
+}
+.parrafoNosotros {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    grid-area: parrafoNosotros;
+    padding: 50px;
+
+}
+.mainNosotros{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100px 500px;
+    grid-template-areas: "tituloNosotros bodegaImg"
+                         "parrafoNosotros bodegaImg";
+     align-items:flex-start;
+}
+
+/** para abajo pagina clientes*/
+
+.tituloClientes{
+    font-family: 'Cinzel', serif;
+    grid-area: tituloClientes;
+    padding: 20px;
+    padding-left: 80px;
+}
+.argentina{
+    font-family: 'Cinzel', serif;
+}
+.latinoamerica{
+    font-family: 'Cinzel', serif;
+}
+.europa{
+    font-family: 'Cinzel', serif;
+}
+.descripcionClientes{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 30px;
+}
+.clientesImg img{
+    width: 500px;
+}
+.clientesImg{
+    grid-area: clientesImg;
+    padding: 80px;
+}
+.todosLosClientes{
+    grid-area: todosLosClientes;
+    width: 700px;
+    padding: 80px;
+}
+.mainClientes{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 100px 500px;
+    grid-template-areas: "tituloClientes tituloClientes"
+                         "todosLosClientes clientesImg";
+   padding: 30px; 
+}
+
+/** para abajo pagina Contacto*/
+
+.tituloContacto{
+    font-family: 'Cinzel', serif;
+}
+.parrafoContacto{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.mailBodega{
+    font-family: 'Cinzel', serif;
+}
+.telBodega{
+    font-family: 'Cinzel', serif;
+}
+.ubicacionBodega{font-family: 'Cinzel', serif;
+}
+
+.formTitulos{
+    padding: 10px;
+    font-family: 'Cinzel', serif;    
+}
+.formulario{
+    padding: 10px;
+    grid-area: formulario;
+
+}
+.contacto{
+    padding: 10px;
+    display:grid;
+    width: 500px;
+    height: 600px;
+    grid-area: contacto;
+    
+}
+.mainContactos{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+    grid-template-areas: "formulario contacto"   
+                         "formulario contacto";
+    align-items: center;
+
+}
+
+@media(max-width: 576px){
+
+
+    body {
+        background-color: rgba(237, 235, 235, 0.821);
+        
+    }
+    
+    
+    .header_index{
+        width: 100%;
+        height: 600px;          
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-image: url(../IMG/Inicio.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 300px;
+    
+    }
+    
+
+
+    .Titulo__index{
+        font-family: 'Cinzel', serif;
+        font-size: 40px;
+        padding: 15px;
+        color: rgb(215, 215, 215);
+    }
+
+
+    .Menu_index ul{
+        list-style: none;
+        height: 550px;
+        width: 100%;
+        background-color: rgba(196, 196, 196, 0.821);
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content:space-around;
+    }
+    
+    
+    .Menu_index ul li a{
+        text-decoration: none;
+        color:black;
+        font-size: 30px;
+        font-family:'Italiana', serif ;
+     }
+    
+    
+    footer {
+        background-color: rgb(123, 123, 123);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+    }
+    
+
+/** para abajo vinos en menor 576px */ 
+    .navbar {
+        background-color: #212626;
+        width: 100%;
+        height: 150px;
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        }
+        
+        .navbar ul {
+            list-style: none;
+            display: flex;
+        }
+        .navbar ul li {
+            padding: 10px
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            font-family:'Italiana', serif;
+            color: rgb(168, 168, 168);
+            font-size: 20px;
+        }
+        .tituloPrincipal {
+            font-family:'Italiana', serif;
+            font-size: 40px;
+            text-align: center;
+            color: #171526;
+        }
+
+        .vinos{
+            display: grid;
+            grid-template-rows: 1fr 1 fr 1 fr 1 fr;
+            grid-template-areas: "vino1"
+                                 "vino2"
+                                 "vino3"
+                                 "vino4";
+            justify-items:flex-start;
+        }
+
+        .vinos_img{
+            width: 180px;
+            grid-area: vinos_img;
+        }
+
+        .vino1{
+            margin: 30px;
+            width: 510px;
+            height: 250px;  
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr 3fr;
+            grid-template-areas: "vinos_img vinos_titulo"
+                                 "vinos_img vinos_descripcion" ;
+            overflow: hidden;
+            grid-area: vino1; 
+        }
+        
+        .vino2{
+            margin: 30px;
+            width: 510px;
+            height: 250px;  
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr 3fr;
+            grid-template-areas: "vinos_img vinos_titulo"
+                                 "vinos_img vinos_descripcion" ;
+            overflow: hidden;
+            grid-area: vino2;            
+            
+            
+        }
+        
+       
+        .vino3{
+            margin: 30px;
+            width: 510px;
+            height: 250px;  
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr 3fr;
+            grid-template-areas: "vinos_img vinos_titulo"
+                                 "vinos_img vinos_descripcion" ;
+            overflow: hidden;
+            grid-area: vino3;
+            
+        }
+        .vino4{
+            margin: 30px;
+            width: 510px;
+            height: 250px;  
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr 3fr;
+            grid-template-areas: "vinos_img vinos_titulo"
+                                 "vinos_img vinos_descripcion" ;
+            overflow: hidden;
+            grid-area: vino4;
+            
+        }
+        footer p {
+            display: inline-block;
+            padding: 10px;
+            margin-left: 20px;
+        
+        }
+
+
+}
